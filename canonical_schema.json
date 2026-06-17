@@ -1,0 +1,12 @@
+{
+  "fact_sales": [
+    "Country",
+    "Revenue",
+    "Total Revenue",
+    "SalesRepFullName",
+    "TargetAmount",
+    "ActualAmount",
+    "ProductLine",
+    "RevenueLocalCcy"
+  ]
+}
