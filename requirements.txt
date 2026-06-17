@@ -1,0 +1,4 @@
+# This repo has no external dependencies -- everything here uses only
+# the Python standard library (csv, json, pathlib). This is intentional:
+# the patterns being illustrated don't need a dependency, and keeping a
+# portfolio repo dependency-free makes it trivial to run anywhere.
