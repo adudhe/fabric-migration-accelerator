@@ -1,0 +1,10 @@
+legacy_table,legacy_field,field_kind,canonical_table,canonical_field
+INTL_SalesFact,Country,column,fact_sales,Country
+INTL_SalesFact,Revenue,column,fact_sales,Revenue
+INTL_SalesFact,Total Revenue,measure,fact_sales,Total Revenue
+MEA_SalesFact,CountryName,column,fact_sales,Country
+MEA_SalesFact,Revenue,column,fact_sales,Revenue
+NA_SalesFact,RepName,column,fact_sales,SalesRepName
+NA_SalesFact,TargetAmount,column,fact_sales,TargetAmount
+NA_SalesFact,ActualAmount,column,fact_sales,ActualAmount
+SGP_SalesFact,LocalCurrencyAmount,column,fact_sales,RevenueLocalCcy

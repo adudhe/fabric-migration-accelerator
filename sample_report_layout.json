@@ -1,0 +1,70 @@
+{
+  "report_name": "Regional Sales Overview",
+  "pages": [
+    {
+      "page_name": "INTL Summary",
+      "visuals": [
+        {
+          "visual_id": "v001",
+          "visual_type": "barChart",
+          "title": "Revenue by Country",
+          "field_bindings": [
+            {"role": "category", "table": "INTL_SalesFact", "column": "Country"},
+            {"role": "value", "table": "INTL_SalesFact", "column": "Revenue"}
+          ]
+        },
+        {
+          "visual_id": "v002",
+          "visual_type": "card",
+          "title": "Total Revenue",
+          "field_bindings": [
+            {"role": "value", "table": "INTL_SalesFact", "measure": "Total Revenue"}
+          ]
+        }
+      ]
+    },
+    {
+      "page_name": "MEA Summary",
+      "visuals": [
+        {
+          "visual_id": "v003",
+          "visual_type": "barChart",
+          "title": "Revenue by Country",
+          "field_bindings": [
+            {"role": "category", "table": "MEA_SalesFact", "column": "CountryName"},
+            {"role": "value", "table": "MEA_SalesFact", "column": "Revenue"}
+          ]
+        }
+      ]
+    },
+    {
+      "page_name": "NA Targets",
+      "visuals": [
+        {
+          "visual_id": "v004",
+          "visual_type": "table",
+          "title": "Target vs Actual",
+          "field_bindings": [
+            {"role": "rows", "table": "NA_SalesFact", "column": "RepName"},
+            {"role": "values", "table": "NA_SalesFact", "column": "TargetAmount"},
+            {"role": "values", "table": "NA_SalesFact", "column": "ActualAmount"}
+          ]
+        }
+      ]
+    },
+    {
+      "page_name": "SGP Detail",
+      "visuals": [
+        {
+          "visual_id": "v005",
+          "visual_type": "matrix",
+          "title": "FX Adjusted Detail",
+          "field_bindings": [
+            {"role": "rows", "table": "SGP_SalesFact", "column": "ProductLine"},
+            {"role": "values", "table": "SGP_SalesFact", "column": "LocalCurrencyAmount"}
+          ]
+        }
+      ]
+    }
+  ]
+}
